@@ -32,4 +32,6 @@ get_prop(vendor_hal_provisioningmanager_qti, boot_status_prop)
 hal_client_domain(vendor_hal_provisioningmanager_qti, vendor_hal_cloudagent)
 hal_client_domain(vendor_hal_provisioningmanager_qti, vendor_hal_datamanager)
 hal_client_domain(vendor_hal_provisioningmanager_qti, vendor_hal_featuremanager)
+userdebug_or_eng(`
 get_prop(vendor_hal_provisioningmanager_qti, vendor_mink_trace_prop)
+')

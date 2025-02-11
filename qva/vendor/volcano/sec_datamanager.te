@@ -34,4 +34,6 @@ allow vendor_hal_datamanager_qti mnt_vendor_file:dir search;
 set_prop(vendor_hal_datamanager_qti, vendor_secdm_prop);
 
 hal_client_domain(vendor_hal_datamanager_qti, vendor_hal_cloudagent)
+userdebug_or_eng(`
 get_prop(vendor_hal_datamanager_qti, vendor_mink_trace_prop)
+')
